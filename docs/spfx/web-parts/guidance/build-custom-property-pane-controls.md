@@ -54,7 +54,7 @@ The source of the working web part is available on GitHub at [sp-dev-fx-webparts
 
 The web part you're building shows list items from the selected SharePoint list. Users can select a list in the web part properties. To store the selected list, create a new web part property named `listName`.
 
-1. In the code editor, open the **src/webparts/listItems/ListItemsWebPartManifest.json** file. Replace the default `description` property with a new property named `listName`:
+1. In the code editor, open the **src/webparts/listItems/ListItemsWebPart.Manifest.json** file. Replace the default `description` property with a new property named `listName`:
 
     ```json
     {
@@ -68,7 +68,7 @@ The web part you're building shows list items from the selected SharePoint list.
     }
     ```
 
-1. Open the **src/webparts/listItems/IListItemsWebPartProps.ts** file and replace its contents with the following
+1. Open the **src/webparts/listItems/ListItemsWebPart.ts** file and replace its contents with the following
 
     ```typescript
     export interface IListItemsWebPartProps {
